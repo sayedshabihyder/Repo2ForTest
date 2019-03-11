@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: com.qa.automation.stepdefs.RunCukesTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 32.143 sec <<< FAILURE! - in com.qa.automation.stepdefs.RunCukesTest
+Then User verifies "CheckBox" should be "checked" on "GeneralPage"(Scenario: Verify checkbox is checked)  Time elapsed: 0.013 sec  <<< FAILURE!
+java.lang.AssertionError: Checkbox with name CheckBox is not checked
+
+Scenario: Verify checkbox is checked  Time elapsed: 0.013 sec  <<< FAILURE!
+java.lang.AssertionError: Checkbox with name CheckBox is not checked
+

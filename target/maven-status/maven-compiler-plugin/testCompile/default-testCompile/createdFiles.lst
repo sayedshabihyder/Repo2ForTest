@@ -1,0 +1,13 @@
+com\qa\automation\stepdefs\ProgressMethodsStepDefs.class
+com\qa\automation\stepdefs\RunCukesTest.class
+com\qa\automation\stepdefs\ScreenshotStepDefs.class
+com\qa\automation\stepdefs\GetORData.class
+com\qa\automation\stepdefs\PrintElementStepDefs.class
+com\qa\automation\stepdefs\InputMethodsStepDefs.class
+com\qa\automation\stepdefs\KeyBoardStepDefs.class
+com\qa\automation\stepdefs\AssertionsStepDefs.class
+com\qa\automation\stepdefs\PdfValidationStepDefs.class
+com\qa\automation\stepdefs\UserStepDefinitions.class
+com\qa\automation\stepdefs\ClickElementsStepDefs.class
+com\qa\automation\stepdefs\Hooks.class
+com\qa\automation\stepdefs\NavigationStepDefs.class

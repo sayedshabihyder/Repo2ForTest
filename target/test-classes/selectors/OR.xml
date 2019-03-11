@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Page>
+	<GeneralPage>
+		<object name="SearchBar">
+			<value>q</value>
+			<type>name</type>
+		</object>
+		<object name="New window option">
+			<value>//*[@id='post-body-6170641642826198246']/a[3]</value>
+			<type>xpath</type>
+		</object>
+		<object name="DoubleClickDemoButton">
+			<value>//*[@id="authentication"]/button</value>
+			<type>xpath</type>
+		</object>
+		<object name="Double-Click Me To See Alert">
+			<value>Double-Click Me To See Alert</value>
+			<type>Name</type>
+		</object>
+		<object name="Insurance Project">
+			<value>Insurance Project</value>
+			<type>linkText</type>
+		</object>
+		<object name="Ins">
+			<value>Ins</value>
+			<type>partialLinkText</type>
+		</object>
+		<object name="Countries">
+			<value>//*[@name='country']</value>
+			<type>xpath</type>
+		</object>
+
+		<object name="ANGUILLA">
+			<value>ANGUILLA</value>
+		</object>
+
+		<object name="TestersHub">
+			<value>//*[@id='menu-item-2822']//a</value>
+			<type>xpath</type>
+		</object>
+		<object name="DemoTesting Site">
+			<value>//*[@id='menu-item-2823']//a</value>
+			<type>xpath</type>
+		</object>
+		<object name="SubMenu Items">
+			<value>//*[@id='menu-item-2822']//div//ul//li//a//span</value>
+			<type>xpath</type>
+		</object>
+		<object name="CheckBox">
+			<value>//*[@value='checkbox1']</value>
+			<type>xpath</type>
+		</object>
+		<object name="Option1">
+			<value>//*[@id='vfb-7-1']</value>
+			<type>xpath</type>
+		</object>
+		<object name="Frames And Windows">
+		</object>
+		<object name="Tooltip">
+		</object>
+		<object name="AlertBox">
+		</object>
+		<object name="Select Elements">
+		</object>
+		<object name="GoogleSearchButton">
+			<value>btnK</value>
+			<type>name</type>
+		</object>
+		<object name="yahooSearchBar">
+			<value>//input[@name='p']</value>
+			<type>xpath</type>
+		</object>
+		<object name="yahooSearchBtn">
+			<value>//button[@id='uh-search-button']</value>
+			<type>xpath</type>
+		</object>
+		<object name="oracleUrl">
+			<value>//a[contains(text(),'Oracle Technology Network for Java
+				Developers | Or')]</value>
+			<type>xpath</type>
+		</object>
+		<object name="menu">
+			<value>u02menulink</value>
+			<type>id</type>
+		</object>
+		<object name="PdfLink">
+		<value>//a[contains(text(),'Advertising_Planning_Grid.pdf')]</value>
+		<type>xpath</type>
+		</object>
+	</GeneralPage>
+	<MakeMyTripHomePage>
+		<object name="Login">
+			<value>//*[@id='ch_login_icon']</value>
+			<type>xpath</type>
+		</object>
+	</MakeMyTripHomePage>
+	<StackOverflowHomePage>
+		<object name="Login">
+			<value>Log In</value>
+			<type>text</type>
+		</object>
+		<object name="Stack">
+		</object>
+		<object name="SignUpButton">
+			<value>/html/body/header/div/ol/li[6]/a[2]</value>
+			<type>xpath</type>
+		</object>
+	</StackOverflowHomePage>
+	<MakeMyTripLoginPage>
+		<object name="UncheckedCheckbox">
+			<value>//*[@id="userLoginSection"]/div/div/div[1]/label/span</value>
+			<type>xpath</type>
+		</object>
+		<object name="CheckedCheckbox">
+			<value>//*[@id="userLoginSection"]/div/div/div[1]/label/span/span
+			</value>
+			<type>xpath</type>
+		</object>
+	</MakeMyTripLoginPage>
+	<GoibiboHomePage>
+		<object name="RoundTripRadioButton">
+			<value>gi_roundtrip_label</value>
+			<type>id</type>
+		</object>
+		<object name="OnewayRadioButton">
+			<value>gi_oneway_label</value>
+			<type>id</type>
+		</object>
+	</GoibiboHomePage>
+	<OutlookNewEventPage>
+		<object name="Calendar">
+			<value>//*[@class="_hl_o ms-font-weight-regular ms-font-color-white
+				o365button ms-font-m"]</value>
+			<type>xpath</type>
+		</object>
+		<object name="UserName">
+			<value>//*[@id="username"]</value>
+			<type>xpath</type>
+		</object>
+		<object name="Password">
+			<value>//*[@id="password"]</value>
+			<type>xpath</type>
+		</object>
+		<object name="SignIn">
+			<value>//*[@id="lgnDiv"]/div[9]/div/span</value>
+			<type>xpath</type>
+		</object>
+		<object name="NewEvent">
+			<value>//*[@class="_ce_U ms-font-color-themePrimary o365button
+				ms-font-m"]</value>
+			<type>xpath</type>
+		</object>
+		<object name="CalendarElement">
+			<value>//*[@class="_fce_A o365button ms-font-m
+				ms-font-color-neutralTertiary ms-bg-color-white
+				ms-border-color-neutralLight"]</value>
+			<type>xpath</type>
+		</object>
+		<object name="Showas">
+			<value>//*[@class="_fce_A o365button ms-font-m
+				ms-font-color-neutralPrimary ms-bg-color-white
+				ms-border-color-neutralTertiary"]</value>
+			<type>xpath</type>
+		</object>
+		<object name="SCHEDULINGASSISTANT">
+			<value>//*[@title="Scheduling assistant"]</value>
+			<type>xpath</type>
+		</object>
+		<object name="Checkbox">
+			<value>//*[@aria-checked="false"]</value>
+			<type>xpath</type>
+		</object>
+		<object name="Scheduling assistant">
+			<value>SCHEDULING ASSISTANT</value>
+		</object>
+		<object name="Event TextBox">
+			<value>//*[@autoid="_cx_1"]</value>
+			<type>xpath</type>
+		</object>
+		<object name="Mail">
+			<value>//*[@autoid="_hl_3"]</value>
+			<type>xpath</type>
+		</object>
+	</OutlookNewEventPage>
+	<SearchPage>
+		<object name="FirstLink">
+			<value>//h3[contains(text(),'Download Free Java Software')]</value>
+			<type>xpath</type>
+		</object>
+	</SearchPage>
+	<DemoHomePage>
+		<object name="Login">
+			<value>ico-login</value>
+			<type>className</type>
+		</object>
+		<object name="Attendance">
+			<value>ico-login</value>
+			<type>className</type>
+		</object>
+		<object name="LogOut Button">
+			<value>ico-logout</value>
+			<type>className</type>
+		</object>
+	</DemoHomePage>
+	<DemoLoginPage>
+		<object name="Email Textbox">
+			<value>Email</value>
+			<type>id</type>
+		</object>
+		<object name="Password Textbox">
+			<value>Password</value>
+			<type>id</type>
+		</object>
+		<object name="Log in">
+			<value>//input[@value='Log in']</value>
+			<type>xpath</type>
+		</object>
+	</DemoLoginPage>
+</Page>
+
+

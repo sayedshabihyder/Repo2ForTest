@@ -1,0 +1,256 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.qa</groupId>
+	<artifactId>automation</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>automation</name>
+	<url></url>
+	<developers>
+		<developer>
+			<name>Anuj Kogata</name>
+		</developer>
+	</developers>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!-- Versions section -->
+		<java.version>1.8</java.version>
+		<selenium.version>3.11.0</selenium.version>
+		<cucumber-java.version>1.2.5</cucumber-java.version>
+		<cucumber-junit.version>1.2.5</cucumber-junit.version>
+		<junit.version>4.12</junit.version>
+		<log4j.version>1.2.17</log4j.version>
+		<maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+		<maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
+		<httpclient.version>4.5.5</httpclient.version>
+		<ant.version>1.7.0</ant.version>
+		<sonar-maven-plugin.version>4.5.4</sonar-maven-plugin.version>
+		<jsoup.version>1.10.2</jsoup.version>
+		<guava.version>24.0-jre</guava.version>
+		<commons-fileupload.version>1.3</commons-fileupload.version>
+		<cucumber-extentsreport.version>3.0.2</cucumber-extentsreport.version>
+		<extentreports.version>4.0.9</extentreports.version>
+
+		<!-- Test Browser -->
+		<!-- This Parameters select where run the test [Remote ,Firefox ,Chrome 
+			,Internet Explorer] -->
+		<browser>Chrome</browser>
+		<!-- Test Operative system [linux, mac, windows] -->
+		<os>Windows</os>
+		<!-- Log Mode section -->
+		<!-- Parameter for logger level use in this order to include the right 
+			information [ALL > DEBUG > INFO > WARN > ERROR > FATAL > OFF] -->
+		<log.level>INFO</log.level>
+
+	</properties>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber-java.version}</version>
+
+		</dependency>
+
+		<!-- These are the cucumber-junit dependencies -->
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber-junit.version}</version>
+
+		</dependency>
+
+		<!-- These are the junit dependencies -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+
+		</dependency>
+
+		<!-- These are the selenium-webdriver dependencies -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+
+		<!-- These are the log4j dependencies -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>com.sun.jmx</groupId>
+					<artifactId>jmxri</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>com.sun.jdmk</groupId>
+					<artifactId>jmxtools</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>javax.jms</groupId>
+					<artifactId>jms</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+			<version>${jsoup.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+			<version>${guava.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-fileupload/commons-fileupload -->
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>${commons-fileupload.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.vimalselvam/cucumber-extentsreport -->
+		<dependency>
+			<groupId>com.vimalselvam</groupId>
+			<artifactId>cucumber-extentsreport</artifactId>
+			<version>${cucumber-extentsreport.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>${extentreports.version}</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/jaxen/jaxen -->
+		<dependency>
+			<groupId>jaxen</groupId>
+			<artifactId>jaxen</artifactId>
+			<version>1.1.6</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/dom4j/dom4j -->
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+			<version>1.6.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.testautomationguru.pdfutil</groupId>
+			<artifactId>pdf-util</artifactId>
+			<version>0.0.3</version>
+		</dependency>
+		
+	</dependencies>
+
+	<!-- Plugins section -->
+	<build>
+		<plugins>
+
+			<!-- Maven Surefire Plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${maven-surefire-plugin.version}</version>
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<testErrorIgnore>true</testErrorIgnore>
+					<testFailureIgnore>true</testFailureIgnore>
+				</configuration>
+			</plugin>
+
+			<!-- Maven Compiler Plugin -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven-compiler-plugin.version}</version>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>ch.fortysix</groupId>
+				<artifactId>maven-postman-plugin</artifactId>
+				<version>0.1.6</version>
+				<executions>
+					<execution>
+
+						<id>send a mail</id>
+						<phase>test</phase>
+						<goals>
+							<goal>send-mail</goal>
+						</goals>
+						<inherited>true</inherited>
+
+						<configuration>
+							<!-- From Email address -->
+							<from>anuj.kogata@incedoinc.com</from>
+
+							<!-- Email subject -->
+							<subject>Test Automation Report</subject>
+
+							<!-- Fail the build if the mail doesnt reach -->
+							<failonerror>true</failonerror>
+							<htmlMessage>
+                                    <![CDATA[
+                                    <p>New test build triggered!</p>
+                                    <p>Attached html file contains the test result</p> 
+                                      ]]>
+							</htmlMessage>
+							<!-- <p>Run: ${TEST_COUNTS}, Failed: ${TEST_COUNTS,var="fail"}, Passed: 
+								{$TEST_COUNTS,var="pass"}</p> -->
+							<!-- host -->
+							<mailhost>mail.incedoinc.com</mailhost>
+							<!-- port of the host -->
+							<mailport>25</mailport>
+
+
+							<!-- Email Authentication(USername and Password) -->
+							<mailuser>anuj.kogata</mailuser>
+							<mailpassword>Incedo20</mailpassword>
+
+							<receivers>
+								<!-- To Email address -->
+								<receiver>anuj.kogata@incedoinc.com</receiver>
+							</receivers>
+
+							<fileSets>
+								<fileSet>
+									<!-- Report directory Path -->
+									<directory>C:\\Users\\anuj.kogata\\eclipse-workspace\\automationqanew\\automationqa\\target\\extentreport\\</directory>
+									<!--<directory>C:\\Users\\anuj.kogata\\.jenkins\\workspace\\AutomationDemo\\target\\</directory> -->
+									<includes>
+										<!-- Report file name -->
+										<include>**/*</include>
+										<!-- Report file name -->
+										<include>report.html</include>
+
+									</includes>
+
+
+
+									<!-- Use Regular Expressions like **/*.html if you want all the 
+										html files to send -->
+								</fileSet>
+							</fileSets>
+
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>
